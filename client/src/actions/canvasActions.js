@@ -1,6 +1,6 @@
-export const setCanvas = (canvasType) => {
+export const setCanvasType = (canvasType) => {
     return {
-        type: "SET_CANVAS",
+        type: "SET_CANVAS_TYPE",
         payload: canvasType
     }
 }

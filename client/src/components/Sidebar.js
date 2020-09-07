@@ -1,20 +1,16 @@
 import React from "react";
-import { setCanvas } from "../actions/canvasActions";
+import { setCanvasType } from "../actions/canvasActions";
 import { connect } from "react-redux";
 
 class Sidebar extends React.Component {
-  setCanvas(type) {
-      this.props.setCanvas(type);
-  }
-
   render() {
     return (
       <div className="four wide column">
         <div className="ui vertical buttons">
-          <button className="ui button" onClick={() => this.setCanvas("quiz")}>
+          <button className="ui button" onClick={() => this.props.setCanvasType("quiz")}>
             Take a Quiz
           </button>
-          <button className="ui button">Take a Quiz</button>
+          <button className="ui button" onClick={() => this.props.setCanvasType('flashcard')}>Use Flashcards</button>
         </div>
       </div>
     );
@@ -28,5 +24,5 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, {
-  setCanvas,
+  setCanvasType,
 })(Sidebar);

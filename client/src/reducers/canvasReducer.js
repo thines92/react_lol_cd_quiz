@@ -1,4 +1,4 @@
-import { SET_CANVAS } from "./constants";
+import { SET_CANVAS_TYPE } from "./constants";
 
 export default (
   state = {
@@ -8,7 +8,7 @@ export default (
   action
 ) => {
   switch (action.type) {
-    case SET_CANVAS:
+    case SET_CANVAS_TYPE:
       return {
         ...state.canvas,
         type: action.payload,
