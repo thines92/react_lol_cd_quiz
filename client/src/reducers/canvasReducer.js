@@ -2,8 +2,7 @@ import { SET_CANVAS_TYPE } from "./constants";
 
 export default (
   state = {
-    canvas: {},
-    data: {},
+    type: null
   },
   action
 ) => {
