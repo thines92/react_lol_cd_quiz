@@ -12,9 +12,17 @@ class Container extends React.Component {
   render() {
     return (
       <div className="ui container">
-        <div className="ui two column grid">
-          <Sidebar />
-          <Canvas />
+        <div className="ui segments two column grid">
+          <div className="four wide column">
+            <div className="ui segment">
+              <Sidebar />
+            </div>
+          </div>
+          <div className="twelve wide column">
+            <div className="ui segment">
+              <Canvas />
+            </div>
+          </div>
         </div>
       </div>
     );

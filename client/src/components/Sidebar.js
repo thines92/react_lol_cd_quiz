@@ -5,14 +5,24 @@ import { connect } from "react-redux";
 class Sidebar extends React.Component {
   render() {
     return (
-      <div className="four wide column">
-        <div className="ui vertical buttons">
-          <button className="ui button" onClick={() => this.props.setCanvasType("quiz")}>
-            Take a Quiz
-          </button>
-          <button className="ui button" onClick={() => this.props.setCanvasType('flashcard')}>Use Flashcards</button>
+        <div className="ui vertically divided grid center aligned">
+          <div className="row">
+            <div
+              className="fluid ui segment button"
+              onClick={() => this.props.setCanvasType("quiz")}
+            >
+              Take a Quiz
+            </div>
+          </div>
+          <div className="row">
+            <div
+              className="fluid ui segment button"
+              onClick={() => this.props.setCanvasType("flashcard")}
+            >
+              Use Flashcards
+            </div>
+          </div>
         </div>
-      </div>
     );
   }
 }

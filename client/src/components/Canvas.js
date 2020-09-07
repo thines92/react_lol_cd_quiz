@@ -16,7 +16,6 @@ class Canvas extends React.Component {
     }
 
     render() {
-        console.log(this);
         return (
             <div className="twelve wide column">
                 {this.renderCanvasType()}
