@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
 import dataReducer from './dataReducer';
+import canvasReducer from './canvasReducer';
 
 export default combineReducers({
-  reducer: dataReducer
+  data: dataReducer,
+  canvas: canvasReducer
 });
