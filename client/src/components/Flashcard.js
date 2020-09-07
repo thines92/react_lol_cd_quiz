@@ -1,13 +1,13 @@
 import React from "react";
 
-class Quiz extends React.Component {
+class Flashcard extends React.Component {
     render() {
         return (
             <div className="ui placeholder segment quiz">
-                Quiz
+                Flashcards
             </div>
         );
     }
 }
 
-export default Quiz;
+export default Flashcard;

@@ -2,7 +2,7 @@ import { SET_CANVAS_TYPE } from "./constants";
 
 export default (
   state = {
-    type: null
+    type: 'quiz'
   },
   action
 ) => {
